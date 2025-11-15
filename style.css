@@ -293,8 +293,8 @@ body {
   position: fixed !important;
   left: 92.5% !important;
   bottom: 37.79527559px !important;
-  width: 2.766857656661786vw   ;
-  height: 14.729071537290716vh   ;
+  width: 37.79527559px !important;
+  height: 96.77px !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
@@ -302,12 +302,11 @@ body {
 }
 
 #qrcode {
-  width: 113px !important;
-  height: 113px !important;
+  width: 83px !important;
+  height: 83px !important;
   position: fixed;
-  bottom: 26.924963396778917vw;
+  bottom: 367.795px;
 }
-
 
 .qr-code img {
   width: 13.763702801461632vh;
@@ -1902,5 +1901,6 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
