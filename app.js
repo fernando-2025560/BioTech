@@ -231,9 +231,6 @@ document.addEventListener("DOMContentLoaded", function () {
       correctLevel: QRCode.CorrectLevel.H
     });
   });
-  
-
-
  
   
 
@@ -843,5 +840,6 @@ function ajustarLayout() {
 // Executa o ajuste ao carregar e redimensionar
 window.addEventListener("load", ajustarLayout);
 window.addEventListener("resize", ajustarLayout);
+
 
 
