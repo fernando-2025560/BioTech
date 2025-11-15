@@ -20,7 +20,7 @@ body::before {
 
 .search-container {
     position: absolute !important;
-    top: 1px !important;  /* Distância do topo */
+    top: 0.1218026796589525vh !important;  /* Distância do topo */
     left: 50% !important;
     transform: translateX(-50%) !important;
     display: flex !important;
@@ -1907,6 +1907,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
