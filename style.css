@@ -308,6 +308,12 @@ body {
   bottom: 367.795px;
 }
 
+#qrcode {
+    width: 8.272327964860908vw !important;
+    height: 17.199391171993913vh !important;
+    position: fixed;
+    bottom: 26.924963396778917vw;
+}
 .qr-code img {
   width: 13.763702801461632vh;
   height: 6.619800820152314vw;
@@ -1901,6 +1907,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
