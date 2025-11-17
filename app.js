@@ -224,15 +224,13 @@ document.addEventListener("DOMContentLoaded", function () {
   
     new QRCode(document.getElementById("qrcode"), {
       text: url,
-      width: 113,   // 3cm ≈ 113px
-      height: 113,
+      width: 5.885vw,   // 3cm ≈ 113px
+      height: 12.556vh,
       colorDark: "#000000",
       colorLight: "#ffffff",
       correctLevel: QRCode.CorrectLevel.H
     });
   });
- 
-  
 
 
 
@@ -840,6 +838,7 @@ function ajustarLayout() {
 // Executa o ajuste ao carregar e redimensionar
 window.addEventListener("load", ajustarLayout);
 window.addEventListener("resize", ajustarLayout);
+
 
 
 
