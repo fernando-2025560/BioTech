@@ -235,7 +235,7 @@ body {
   width: 2.9167vw !important;
   height: 4.375vh !important;
   border-radius: 50% !important;
-  backdrop-filter: blur(6px) saturate(180%) !important;
+  backdrop-filter: blur(0.313vw) saturate(180%) !important;
   background: rgba(255, 255, 255, 0.2) !important;
   box-shadow : 
      0 0.208vw 0.521vw rgba(255,255,255, 0.3),
@@ -257,7 +257,7 @@ body {
 .glass-icon:hover {
   transform: scale(1.4) translateX(-0.193vw) !important;
   box-shadow:
-      0 0.156vw 8px rgba(0,0,0,0.4),
+      0 0.156vw 0.417vw rgba(0,0,0,0.4),
       inset 0.104vw 0.104vw 0.156vw rgba(255, 255, 255, 0.6),
       inset 0.156vw 0.156vw 0.156vw rgba(0,0,0,0.2) !important;
       top: 67.944vh !important;
@@ -292,9 +292,9 @@ body {
 #qrcode-container {
   position: fixed !important;
   left: 92.5% !important;
-  bottom: 37.79527559px !important;
-  width: 37.79527559px !important;
-  height: 96.77px !important;
+  bottom: 4.199vh !important;
+  width: 1.969vw !important;
+  height: 4.199vh !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
@@ -302,10 +302,10 @@ body {
 }
 
 #qrcode {
-  width: 83px !important;
-  height: 83px !important;
+  width: 4.323vw !important;
+  height: 9.222vh !important;
   position: fixed;
-  bottom: 367.795px;
+  bottom: 40.866vh;
 }
 
 #qrcode {
@@ -1907,6 +1907,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
