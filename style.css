@@ -238,16 +238,16 @@ body {
   backdrop-filter: blur(6px) saturate(180%) !important;
   background: rgba(255, 255, 255, 0.2) !important;
   box-shadow : 
-     0 4px 10px rgba(255,255,255, 0.3),
-     inset 1px 1px 2px rgba(0,0,0,0.3),
-     inset 2px 2px 2px rgba(0,0,0,0.1) !important;
+     0 0.208vw 0.521vw rgba(255,255,255, 0.3),
+     inset 0.052vw 0.052vw 0.104vw rgba(0,0,0,0.3),
+     inset 0.104vw 0.104vw 0.104vw rgba(0,0,0,0.1) !important;
   display: flex !important;
   justify-content: center  !important;
   align-items: center !important;
   transition: transform 0.3s ease, box-shadow 0.3s ease !important;
   text-decoration: none !important;
   object-fit: contain !important;
-  padding: 5.67px !important;
+  padding: 0.295vw !important;
   box-sizing: border-box !important;
   overflow: visible !important;
   top: 74.48233861144945vh !important;
@@ -255,12 +255,12 @@ body {
 
 
 .glass-icon:hover {
-  transform: scale(1.4) translateX(-3.7px) !important;
+  transform: scale(1.4) translateX(-0.193vw) !important;
   box-shadow:
-      0 3px 8px rgba(0,0,0,0.4),
-      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-      inset 3px 3px 3px rgba(0,0,0,0.2) !important;
-      top: 611.5px !important;
+      0 0.156vw 8px rgba(0,0,0,0.4),
+      inset 0.104vw 0.104vw 0.156vw rgba(255, 255, 255, 0.6),
+      inset 0.156vw 0.156vw 0.156vw rgba(0,0,0,0.2) !important;
+      top: 67.944vh !important;
 }
 
 .glass-svg {
@@ -1907,6 +1907,7 @@ main {
   .vid-box iframe { width: 100%; }
   .vid-box p { font-size: 0.8rem; }
 }
+
 
 
 
