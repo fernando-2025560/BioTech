@@ -2,7 +2,17 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#000000">
+
+    <!-- SEO -->
+    <meta name="description" content="Site sobre DNA Projetado, Biotecnologia.">
+
+    <!-- Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ciência">
     <title>Ciência</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -19,7 +29,6 @@
         body {
         margin: 0;
         background: #f4f4f4;
-        font-family: Arial, sans-serif;
         }
         
         
@@ -28,7 +37,7 @@
         .barra {
             /* Estilos para a barra */
             background-color: #f1f1f1;
-            padding: 3.1250vw;
+            padding: 0.521vw;
         }
 
         .botao-direita {
@@ -40,10 +49,9 @@
             padding: 0;
             display: flex;
             justify-content: center;
-            left: 4.6875vw;
+            left: 0.782vw;
             align-items: start;
             height: 100vh;
-            font-family: Arial, sans-serif;
         } 
 
         body{
@@ -65,23 +73,34 @@
     
     
     <style>
-       /* Estilo para posicionar o h1 no canto superior esquerdo */
-       h1 {
-            font-size: 4.4014vh !important;
-            position: absolute !important; 
-            top: 1.4085vh !important;
-            left: 33.1250vw !important; 
-            margin: 3.1250vw !important; /* Ajusta a margem conforme necessário */
+      h1 {
+        font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+        top: clamp(0.3rem, 1vh, 0.8rem);
+        left: clamp(2.5rem, 10vw, 6.6rem);
+        margin: clamp(0.3rem, 1vh, 0.6rem);
     }
-
+    
+    
+    /* Mantém a barra no mesmo lugar, mas ajusta automaticamente */
     .barra-de-pesquisa {
-      position: fixed;
-      top: 0;
-      left: 50%;
-      background-color: white;
-      padding: 0.5858230814294083vw;
-
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        padding: clamp(6px, 1vh, 10px);
+        width: auto;
+        max-width: 100%;
     }
+    
+    /* Ajuste fino para telas muito pequenas */
+    @media (max-width: 480px) {
+        h1 {
+          left: clamp(40px, 10vw, 106px) !important;
+          top: clamp(4px, 1vh, 8px) !important;
+        }
+    }
+    
     
 </style>
 
@@ -91,7 +110,7 @@
 
 
 
-<img src="3.jpg" alt="Logo" id="logo" style="position: absolute; top:0 ; left: 0; width: 6.619800820152314vw; height: 8.574908647990258vh;">
+<img src="3.jpg" alt="Logo" id="logo" style="position: absolute; top:0 ; left: 0; width: 7.99vw; height: 9.15vh;">
          <header>  
          <h1 style="font-style: italic;">Moldando o Amanhã</h1>
          </header>
@@ -116,12 +135,12 @@
             .search-bar {
               width: 34.8vw !important;
               height: 4.7vh !important;
-              padding-left: 0.3456356180433509vw !important;
-              font-size: 1.94884287454324vh !important;
-              border: 0.1698886936145284vw solid black !important;
-              border-radius: 0.9373169302870533vw !important;
+              padding-left: 0.312500vw !important;
+              font-size: 2.6vh !important;
+              border: 0.156250vw solid black !important;
+              border-radius: 0.833333vw !important;
               position: absolute !important;
-              top: 0.925700365408039vh !important;
+              top: 1.1vh !important;
               left: 50% !important;
               transform: translateX(-50%) !important;
               z-index: 99 !important;
@@ -130,18 +149,18 @@
             .search-button {
               width: 8.4vw;
               height: 4.7vh;
-              font-size: 1.94884287454324vh;
-              border: 0.1698886936145284vw solid black;
-              border-left: 0.5272407732864675vw;
-              border-radius: 0.9373169302870533vw;
+              font-size: 2.6vh;
+              border: 0.156250vw solid black;
+              border-left: 0.469vw;
+              border-radius: 0.833333vw;
               color: black;
               cursor: pointer;
-              margin-left: 1.3473930872876392vw;
+              margin-left: 1.198vw;
               background-color: transparent;
               position: absolute;
-              top: 0.925700365408039vh;
+              top: 1.1vh;
               z-index: 99;
-              right: 19.31458699472759vw;
+              right: 22.9184vw;
             }
         
               </style>
@@ -239,7 +258,7 @@
         
         <nav>
             <body style="margin: 0; padding: 0; height: 100vh;">
-                <div style="position: absolute; top: 8.404384896467722vh; left: 0; right: 0; bottom: 0; overflow-y: auto;">
+                <div style="position: absolute; top: 9.599vh; left: 0; right: 0; bottom: 0; overflow-y: auto;">
                     <marquee direction="left"><strong>A Vida como você nunca viu antes: A ciência e a engenharia genética revolucionando o mundo, o futuro não espera. Ele é projetado! Moldado pela inovação e pela coragem de ir além do limite um dia existente.</strong></marquee>
                 </div>
               </body>
@@ -249,7 +268,7 @@
         
 
               
-       <script
+        <script
         src="https://www.cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
         <body>
           <div id="qrcode-container">
@@ -268,6 +287,8 @@
 
 <iframe 
   id="youtubeVideo"
+  width: clamp(12vw, 26vw, 42vw);
+  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
   src="https://www.youtube.com/embed/C5x073iElaA" 
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
@@ -291,7 +312,9 @@
 
       <!-- Player do YouTube -->
       <iframe
-        id="ytPlayer"
+      width: clamp(12vw, 26vw, 42vw);
+        height: calc(clamp(12vw, 26vw, 42vw) * 0.5625); 
+      id="ytPlayer"
         class="yt-iframe"
         title="YouTube player"
         src="https://www.youtube.com/embed/EIGWzwAmH7E?&enablejsapi=1&rel=0&modestbranding=1&playsinline=1"
@@ -345,19 +368,23 @@
 
 <div id="customVideoBox">
   <iframe id="customYT" 
+  width: clamp(12vw, 26vw, 42vw);
+  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
   src="https://www.youtube.com/embed/yh-RrGHL5c8?list=PLsRNoUx8w3rOwHx4kVJL5ksS9vTxj5hXn&index=80&rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3" 
   frameborder="0" 
   allow="autoplay; encrypted-media">
 </iframe>
 <div id="videoCaption">
-  <a href="https://www.ufsm.br/midias/arco/post218" target="_blank">A resposta que você procura pode estar neste episódio</a>
+  <a href="https://timesbrasil.com.br/colunas/brazil-health/o-futuro-da-medicina-ja-comecou-a-revolucao-quantica-na-saude/" target="_blank">A resposta que você procura pode estar neste episódio</a>
 </div>
 </div>
 
 
 <div id="customVideoBox2">
   <iframe id="customYT2" 
-    src="https://www.youtube.com/embed/53sQCOWzc24?list=PLsRNoUx8w3rOwHx4kVJL5ksS9vTxj5hXn&index=80&rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3" 
+  width: clamp(12vw, 26vw, 42vw);
+  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);  
+  src="https://www.youtube.com/embed/53sQCOWzc24?list=PLsRNoUx8w3rOwHx4kVJL5ksS9vTxj5hXn&index=80&rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3" 
     frameborder="0" 
     allow="autoplay; encrypted-media">
   </iframe>
@@ -370,9 +397,11 @@
 
 <div class="video-miniatura">
   <iframe 
-    src="https://www.youtube.com/embed/QWAhS5AAJbU" 
-    title="YouTube video player"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;">
+  width: clamp(12vw, 26vw, 42vw);
+  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);  
+  src="https://www.youtube.com/embed/QWAhS5AAJbU" 
+  title="YouTube video player"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;">
   </iframe>
   <div class="video-legenda">
     <a href="https://www.nucleodoconhecimento.com.br/livros/biotecnologia-um-enfoque/inovacao-medica" target="_blank">“Biotecnologia Vermelha: quando a próxima revolução médica já está nas páginas — clique e descubra como a ciência está hackeando a cura!”
@@ -387,7 +416,9 @@
  <!-- Bloco de vídeo isolado -->
 <div class="custom-video-container">
   <iframe
-    id="customYtVideo"
+  width: clamp(12vw, 26vw, 42vw);
+ height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);  
+  id="customYtVideo"
     class="custom-yt-iframe"
     src="https://www.youtube.com/embed/FeXNB1x1Ixw?rel=0&modestbranding=1&controls=1&fs=0"
     title="YouTube video player"
@@ -408,7 +439,9 @@
 
   <div id="customVideoBox3">
     <iframe id="customYT2" 
-      src="https://www.youtube.com/embed/htEHwDuHoYU/&rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3" 
+    width: clamp(12vw, 26vw, 42vw);
+        height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);  
+    src="https://www.youtube.com/embed/htEHwDuHoYU/&rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3" 
       frameborder="0" 
       allow="autoplay; encrypted-media">
     </iframe>
@@ -420,7 +453,9 @@
 
   <div id="customVideoBox4">
     <iframe id="customYT2" 
-        src="https://www.youtube.com/embed/AKzq0vpdmRk/&rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3" 
+    width: clamp(12vw, 26vw, 42vw);
+        height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);    
+    src="https://www.youtube.com/embed/AKzq0vpdmRk/&rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3" 
         frameborder="0" 
         allow="autoplay; encrypted-media; picture-in-picture">
     </iframe>
@@ -431,7 +466,9 @@
 
 <div id="customVideoBox5">
   <iframe 
-    src="https://www.youtube.com/embed/I707uBgrD94?rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3"
+  width: clamp(12vw, 26vw, 42vw);
+  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);  
+  src="https://www.youtube.com/embed/I707uBgrD94?rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3"
     title="Vídeo YouTube"
     frameborder="0"
     allow="accelerometer; controls; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
@@ -444,8 +481,8 @@
 <div class="video-container">
   <!-- Vídeo Shorts incorporado -->
   <iframe id="ytVideo"
-    width="24.61rem"
-    height="13.84rem"
+  width: clamp(12vw, 26vw, 42vw);
+  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
     src="https://www.youtube.com/embed/elY_FPWcGwY?rel=0&modestbranding=1&fs=0&controls=1"
     title="YouTube Shorts"
     frameborder="0"
@@ -460,8 +497,8 @@
 <div id="customVideoBox8">
   
   <iframe
-    width="24.61rem"
-    height="13.84rem"
+  width: clamp(12vw, 26vw, 42vw);
+  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
     src="https://www.youtube.com/embed/mR9CZXdTaNY?rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3"
     title="YouTube Shorts"
     frameborder="0"
@@ -481,8 +518,8 @@
 <div id="customVideoBox9">
   
   <iframe
-    width="24.61rem"
-    height="13.84rem"
+  width: clamp(12vw, 26vw, 42vw);
+  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
     src="https://www.youtube.com/embed/AiqxEru6sdY"
     title="YouTube Shorts"
     frameborder="0"
@@ -502,8 +539,8 @@
 <div id="customVideoBox10">
   
   <iframe
-    width="24.61rem"
-    height="13.84rem"
+  width: clamp(12vw, 26vw, 42vw);
+  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
     src="https://www.youtube.com/embed/2YV-dT52LQg"
     title="YouTube Shorts"
     frameborder="0"
@@ -523,8 +560,8 @@
 <div id="customVideoBox11">
   
   <iframe
-    width="24.61rem"
-    height="13.84rem"
+  width: clamp(12vw, 26vw, 42vw);
+  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
     src="https://www.youtube.com/embed/yM3G7397XZ4"
     title="YouTube Shorts"
     frameborder="0"
@@ -543,8 +580,8 @@
 <div id="customVideoBox12">
   
   <iframe
-    width="24.61rem"
-    height="13.84rem"
+  width: clamp(12vw, 26vw, 42vw);
+  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
     src="https://www.youtube.com/embed/2muq7tHNGvI"
     title="YouTube Shorts"
     frameborder="0"
@@ -563,8 +600,8 @@
 <div id="customVideoBox13">
   
   <iframe
-    width="24.61rem"
-    height="13.84rem"
+  width: clamp(12vw, 26vw, 42vw);
+  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
     src="https://www.youtube.com/embed/q7BOf3EV2Bc"
     frameborder="0"
     allow="accelerometer; clipboard-write; controls; encrypted-media; gyroscope; picture-in-picture">
@@ -588,8 +625,8 @@
 <div id="customVideoBox7">
   
   <iframe
-    width="24.61rem"
-    height="13.84rem"
+  width: clamp(12vw, 26vw, 42vw);
+  height: calc(clamp(12vw, 26vw, 42vw) * 0.5625);
     src="https://www.youtube.com/embed/EUsVcMhBkoY?rel=0&modestbranding=1&fs=0&controls=1&disablekb=1&iv_load_policy=3"
     title="YouTube Shorts"
     frameborder="0"
@@ -610,24 +647,4 @@
     <script src="app.js" defer></script>
 </body>    
 </html>
-
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
